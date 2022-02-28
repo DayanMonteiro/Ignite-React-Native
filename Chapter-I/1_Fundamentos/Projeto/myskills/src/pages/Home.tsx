@@ -26,8 +26,12 @@ export function Home() {
       id: String(new Date().getTime()),
       name: newSkill,
     }
+
+    console.log("new skill", data)
+
     setMySkills(oldstate => [...oldstate, data]);
   }
+
 
   function handleRemoveSkill(id: string) {
     setMySkills(oldState => oldState.filter(
