@@ -1,5 +1,6 @@
 import React from 'react';
 import { Input } from '../../components/Forms/Input';
+import { Button } from '../../components/Forms/Button';
 import { 
     Container, 
     Header, 
@@ -18,6 +19,7 @@ export function Register(){
             <Form>
                 <Input placeholder='Nome' />
                 <Input placeholder='Preço' />
+                <Button title="Enviar" />
             </Form>
         </Container>
     )
