@@ -48,9 +48,7 @@ export const Icon  = styled(Feather)<TypeProps>`
 
 `;
 
-export const Footer  = styled.View`
-
-`;
+export const Footer  = styled.View``;
 
 export const Amount  = styled.Text<TypeProps>`
     font-size: ${RFValue(32)}px;
