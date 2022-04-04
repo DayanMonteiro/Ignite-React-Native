@@ -15,7 +15,7 @@ import {
     HighlightCards,
     Transactions,
     Title,
-    TransactionList,
+    TransanctionList,
     LogoutButton
 } from './styles';
 
@@ -102,15 +102,16 @@ export function Dashboard() {
 
            <Transactions>
                <Title>Listagem</Title>
-
-                <TransactionList 
+                {/* <TransactionList 
                  data={data}
                  keyExtractor={item => item.id}
                  renderItem={({ item }) =>  <TransactionCard data={item} />}
-
+                />        */}
+                <TransanctionList<DataListProps>
+                    data={data}
+                    keyExtractor={(item) => item.id}
+                    renderItem={({ item }) => <TransactionCard data={item} />}
                 />
-
-              
            </Transactions>
         </Container>
     )
